@@ -24,7 +24,8 @@
     "pretty-hrtime": "~0.2.1",
     "nib": "~1.0.2",
     "gulp-compile-handlebars": "^0.4.4",
-    "del": "^1.1.1"
+    "del": "^1.1.1",
+    "gulp-debug": "^1.0.1"
   },
   "dependencies": {
     "jquery": "~2.1.1",

@@ -15,7 +15,6 @@ gulp.task('deploy', ['compress'], function() {
     .pipe(rename(function(path) {
       path.dirname = project + '/' + path.dirname;
     }))
-    // .pipe(awspublish.gzip({ ext: '.gz' }))
     .pipe(publisher.publish())
     // Optionally delete files in your bucket that are not in your local folder
     .pipe(publisher.sync(project ? (project + '/') : null))
