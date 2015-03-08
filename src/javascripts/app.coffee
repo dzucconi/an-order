@@ -4,7 +4,7 @@ Orders = require './orders'
 
 $ ->
   ($stage = $('body'))
-    .append(Orders.A033307((range = new Range(n: 1, interval: 1024)).next()...))
+    .append(Orders.A033307((range = new Range(n: 1, interval: 2048)).next()...))
 
   $(window).on 'scroll', ->
     if ((h = $(document).height()) - ($(window).height() + $(window).scrollTop())) / h < 0.1
